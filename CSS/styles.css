@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif, arial;
+  font-size: 18px;
+}
+
+/* HEADER-SECTION */
+.header-wrapper {
+  text-align: center;
+  background-image: url(../images/bg-header-mobile.png);
+  padding: 6.25rem 0 1.875rem 0;
+}
+
+/* MAIN-SECTION */
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.875rem;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 2.5rem 0 8rem 0;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  padding: 0.938rem 0;
+  border-radius: 1.563rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.btn-ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.btn-mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+/* DISPLAY-SECTION */
+.display-section-one,
+.display-section-three {
+  margin-top: 5rem;
+}
+
+.display-section-two {
+  margin-top: 10rem;
+}
+
+.description-section-one {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.img-section {
+  margin-bottom: 1.5rem;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  text-align: center;
+}
+
+.spon-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  margin: 8rem auto;
+}
+
+/* FOOTER-SECTION */
+footer {
+  background-color: hsl(240, 3%, 93%);
+  padding: 5rem 0;
+  text-align: center;
+
+  ul li {
+    list-style-type: none;
+    margin-bottom: 1.25rem;
+    margin-left: -40px;
+  }
+
+  img.logo {
+    height: 60px;
+  }
+
+  .media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-wrapper {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .hero-section,
+  .description-section {
+    width: 50%;
+  }
+
+  .btn-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+  }
+
+  /* DISPLAY-SECTION */
+
+  .display-section-one {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    width: 100%;
+  }
+
+  .display-section-one .img-section {
+    margin-left: -3rem;
+  }
+
+  .display-section-two .img-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .description-section-one {
+    width: 35%;
+
+    p,
+    h3 {
+      text-align: start;
+    }
+  }
+
+  .display-section-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-section,
+  .middle-section,
+  .right-section {
+    width: 25%;
+  }
+
+  .spon-section {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
