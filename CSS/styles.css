@@ -116,7 +116,7 @@ footer {
   ul li {
     list-style-type: none;
     margin-bottom: 1.25rem;
-    margin-left: -40px;
+    margin-left: -2.5rem;
     cursor: pointer;
 
     &:hover {
@@ -125,14 +125,14 @@ footer {
   }
 
   img.logo {
-    height: 60px;
+    height: 3.75rem;
   }
 
   .media-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
 
     img {
       cursor: pointer;
