@@ -55,6 +55,10 @@ p {
   letter-spacing: 0.5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
 }
 
 .btn-ios {
@@ -113,6 +117,11 @@ footer {
     list-style-type: none;
     margin-bottom: 1.25rem;
     margin-left: -40px;
+    cursor: pointer;
+
+    &:hover {
+      color: hsl(171, 66%, 44%);
+    }
   }
 
   img.logo {
@@ -124,6 +133,10 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 40px;
+
+    img {
+      cursor: pointer;
+    }
   }
 }
 
@@ -151,7 +164,7 @@ footer {
   .display-section-one {
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
     width: 100%;
   }
 
@@ -197,7 +210,7 @@ footer {
     gap: 0;
 
     img {
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
     }
   }
 
